@@ -4,7 +4,6 @@ import './styles.scss'
 import fetchPointData from './wthrFetch'
 
 const App = () => {
-
   // kicks off weather data fetch
   fetchPointData()
   return (
@@ -14,4 +13,4 @@ const App = () => {
   )
 }
 
-render(<App />, document.getElementById('app'));
+render(<App />, document.getElementById('app'))
