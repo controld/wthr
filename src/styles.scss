@@ -1,0 +1,28 @@
+/*
+ * From "CSS In Depth" p. 41, Listing 2.15 "Responsive base font-size"
+ * 
+ * + reasonable default overrides
+ * + no CSS reset
+ * + responsive
+ * + way better than anything I could come up with this quickly
+*/
+
+::before,
+::after {
+  box-sizing: border-box;
+}
+:root {
+  font-size: 0.75em; /* applies to all screens, but overriden for larger screens */
+}
+@media (min-width: 800px) {
+  :root {
+   font-size: 0.875em; /* applies only to screens 800px or wider, overriding original value */
+  }
+}
+@media (min-width: 1200px) {
+  :root {
+   font-size: 1em; /* applies only to screens 1200px or wider, overriding both values */
+  }
+}
+
+

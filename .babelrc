@@ -1,0 +1,20 @@
+{
+  "presets": [
+    "@babel/env",
+    "@babel/preset-react",
+    [
+      "@babel/preset-stage-2",
+      {
+        "decoratorsLegacy": true
+      }
+    ]
+  ],
+  "plugins": [
+    ["@babel/plugin-transform-runtime", {
+      "helpers": false,
+      "polyfill": false,
+      "regenerator": true,
+      "moduleName": "babel-runtime"
+    }]
+  ]
+}
