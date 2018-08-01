@@ -1,14 +1,17 @@
 import React from 'react'
 import { render } from 'react-dom'
 import './styles.scss'
-import fetchPointData from './wthrFetch'
+import WthrStatus from './wthrStatus'
+
+// import fetchPointData from './wthrFetch'
 
 const App = () => {
   // kicks off weather data fetch
-  fetchPointData()
+  // fetchPointData()
   return (
     <div>
-      <h3>Mark's Application Is Not Quite Ready for Prime Time</h3>
+      <h3>Not Quite Ready for Prime Time</h3>
+      <WthrStatus />
     </div>
   )
 }
